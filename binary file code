@@ -1,0 +1,18 @@
+import pickle 
+
+def create():
+  with open("data.bat", "wb")as f:
+    while True:
+      name = input("Enter Your Name: ")
+      age = int(input("Enter Your Name: ))
+      sc = input("Enter Your School Name: )
+      record = [name, age, sc]
+      
+      pickle.dump(record, f)
+      
+      num = int(input("Enter 1 for reEntry and 2 for exit the program: ))
+      if num == 2:
+        print("successfully exited")
+        break
+        
+create()        
