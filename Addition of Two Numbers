@@ -1,0 +1,10 @@
+# addition of two numbers entered by user
+
+def add_twoNumbers(num1, num2):
+    result = num1 + num2
+    return result
+
+first_number = int(input("Enter First Number: "))
+second_number = int(input("Enter Second Number: "))
+
+print("Addition of Entered Two Numbers is",add_twoNumbers(first_number, second_number))
