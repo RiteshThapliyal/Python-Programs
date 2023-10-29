@@ -1,0 +1,12 @@
+# Checking Factorial Code
+
+result = 1
+check = 1
+
+user_input = int(input("Enter your Input: "))
+
+while (check <= user_input):
+    result *= check
+    check += 1
+
+print("Factorial is:",result)
