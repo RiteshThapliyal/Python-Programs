@@ -1,0 +1,25 @@
+# Program for Checking Prime Number
+
+user_input_ = int(input("Enter a Number: "))
+
+if (user_input_ == 0):
+    print("Entered Number is not Prime")
+
+if (user_input_ < 0):
+    print("Negative Number is not Prime")
+
+if (user_input_ == 1):
+        print("Entered Number is Not Prime")
+
+check = 1
+
+while (check <= user_input_):
+    check += 1
+    if (user_input_ % check == 0):
+        # print(check)
+        if (user_input_ == check):
+            print("Entered Number is Prime Number")
+            break
+        else:
+            print("Entered Number is not Prime Number")
+            break
