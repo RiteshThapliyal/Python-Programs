@@ -1,0 +1,10 @@
+// Print n number from 1 without using the loop
+
+def withoutLoop(a, b):
+    if a <= b:
+        print(a)
+        a += 1
+        withoutLoop(a, b)
+        
+n = int(input("Enter a Number: "))
+withoutLoop(1, n)
