@@ -1,6 +1,8 @@
+// Method 1
+
 # Program for Checking Prime Number
 
-user_input_ = int(input("Enter a Number: "))
+user_input_ = int(input("Enter Number to check whether it is Prime or Not: "))
 
 if (user_input_ == 0):
     print("Entered Number is not Prime")
@@ -23,3 +25,34 @@ while (check <= user_input_):
         else:
             print("Entered Number is not Prime Number")
             break
+
+
+// Method 2
+
+# Program for Checking Prime Number
+
+user_input = int(input("Enter Number to check whether it is Prime or Not: "))
+
+check = 1
+
+count = 0
+
+while check <= user_input:
+    check += 1
+    
+    if (user_input == 0):
+        print("Entered Number is not Prime Number")
+        break
+
+    if (user_input < 0):
+        print("Negative Number is not Prime Number")
+        break
+
+    if user_input % check == 0:
+        count += 1
+
+if count == 1:
+    print("Entered Number is Prime Number")
+            
+else:
+    print("Entered Number is not Prime Number")
